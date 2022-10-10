@@ -66,6 +66,7 @@ img.Logo-ml {
     display: flex;
     justify-content: center;
     align-items: center;    
+    height: 13%;
     }
 
 .burger-menu i{
@@ -75,6 +76,7 @@ img.Logo-ml {
     margin:5%;
     border-radius: 10px;
     font-size: 200%;
+    
     
 }
 
@@ -104,15 +106,16 @@ main{
     display: flex;
     flex-direction: column;
     width: 11%;
+    flex-wrap: wrap
 }
 
 p input{
-    width: 30%;
+    width: 99%;
 
 }
 
 .formulario-comprador-vendedor{
-    width: 23%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

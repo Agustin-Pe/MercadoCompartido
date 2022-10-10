@@ -30,6 +30,7 @@ img.Logo-ml {
     display: flex;
     align-self: center;
     gap: 2%;
+    width: 40%;
  
 }
 
@@ -62,7 +63,8 @@ img.Logo-ml {
 .burger-menu{
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;   
+    height: 13%; 
     }
 
 .burger-menu i{
@@ -74,13 +76,27 @@ img.Logo-ml {
     font-size: 200%;
     
 }
+.formulario-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
 
 
 .navbar{
     display: none;
 }
-.botonEnviar:hover{
+input {
+    width: 400;
+}
+.botonEnviar{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color:white;
     background-color: #0022AA;
+    width: 400;
+    margin: auto;
 }
 
 /*FOOTER*/
