@@ -50,17 +50,17 @@
         </div>
         </section>
     </header>
-    <form action="/" method="GET" class="formulario" class="formulario">
-
-        <p class="formulario-flex">
-            <input type="text" name="nombre-usuario" placeholder="Nombre de usuario">
-        </p>
-        <p class="formulario-flex">
-            <input type="text" name="nombre-contraseña" placeholder="Elegí tu contraseña">
-        </p>
-
-        <button type="submit" class="botonEnviar">Enviar</button>
-    </form>
+    <form name="login" method="get" action="/" class="create-form">
+        <div class="control-form"> 
+        <label for="usuario">Nombre de usuario</label>
+           <input type="usuario" id="usuario" name="usuario" required>
+       </div>  
+       <div class="control-form">
+           <label for="pass">Contraseña</label>
+           <input type="password" name="pass" id="pass" required>
+       </div>
+           <button type="submit" class="button-form-login">Enviar</button>
+       </form>
 <footer>
         <section class="pago-con-tarjeta">
             <i class="fa-sharp fa-solid fa-credit-card"></i>

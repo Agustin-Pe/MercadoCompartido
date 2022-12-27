@@ -13,10 +13,12 @@
         <header>
             <section class = "primeraSeccionHeader">
                 <img class="Logo-ml" src="images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre">
-                <section class = "barra-busqueda-icono">  
-                    <input class = "barra-busqueda" placeholder="Buscar productos, marcas" type="text"></input>         
+                <form class = "barra-busqueda-icono" action="#">  
+                    <input class = "barra-busqueda" placeholder="Buscar productos, marcas" type="text" name="search"></input>         
+                 <button class="icon-botton">    
                     <i class="fa-solid fa-magnifying-glass" id = "icono-lupa"></i>
-                </section>
+                </button>
+            </form>
                 <h2 class="advertencia-compra-cuotas"><i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito</h2>
             </section>
             <section class = "segundaSeccionHeader">
@@ -62,9 +64,7 @@
                                 <div class = "envioCamion">
                                     <i class="fa-solid fa-truck"></i>
                                 </div>
-                                <div class="descripcionTotalProducto"> <!-- este div contenedor
-                                permit asignle un flex row y poder dejar un espacio debajo de
-                                h3 descripciones tal como pedía el ejercicio de la clase 14 -->
+                                <div class="descripcionTotalProducto">
                                     <div class = "precioDescuento">
                                         <p class="Precios">$6.770</p>
                                         <p class="Descuentos">40% off</p>
@@ -127,7 +127,7 @@
                     </article> 
                 </section> 
                 <div class="line-break"></div> 
-                <h3 class="Titulares">Basado en tu última visita</h3>
+                <h3 class="Titulares">Ofertas</h3>
                 <section class = "sub-section-articulos">
                     <article>
                             <img class ="Imagen-articulo" src="images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex">
@@ -135,9 +135,7 @@
                                 <div class = "envioCamion">
                                     <i class="fa-solid fa-truck"></i>
                                 </div>
-                                <div class="descripcionTotalProducto"> <!-- este div contenedor
-                                permit asignle un flex row y poder dejar un espacio debajo de
-                                h3 descripciones tal como pedía el ejercicio de la clase 14 -->
+                                <div class="descripcionTotalProducto">
                                     <div class = "precioDescuento">
                                         <p class="Precios">$6.770</p>
                                         <p class="Descuentos">40% off</p>
@@ -202,35 +200,27 @@
             <div class="line-break"></div> 
         </main>
         <br>
-        <footer>
-        <section class ="footerClase">
-            <section class="pago-con-tarjeta">
-                <i class="fa-sharp fa-solid fa-credit-card"></i>
-                <h3>Pagá con tarjeta con tarjeta o en efectivo</h3>
-                <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o 
-                efectivo en puntos de pago.¡Y siempre es seguro!</p>
-            </section>
-         
-            <section class="envio-gratis">
-                <i class="fa-solid fa-gift"></i>
-                <h3>Envío gratis desde los $ 2.500</h3>
-                <p>Solo por estar registrado en Mercado Liebre tenés envíos gratis en miles de productos.
-                    Es un beneficio de Mercado Puntos
-            </p>
-            </section>
-           
-            <section class="seguridad-principio">
-                <i class="fa-solid fa-user-shield"></i> 
-                <h3>Seguridad de principio a fin</h3>
-                <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre 
-                    no hay nada que no puedas hacer porque estás siempre 
-                    protegid@.
-            </p>
-            </section>
-          
-        </section>  
-        <p>Copyright © 1999-2020 MercadoLiebre S.R.L</p>
-        </footer>
+        
+    <footer>
+        <div class="footer-all">
+        <section class="footer-section">
+        <i class="fa-solid fa-credit-card icono"></i>
+        <h2>Paga con tarjeta o en efectivo</h2>
+        <p> Con MercadoLiebreCash, tienes cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro! </p>
+        </section> 
+        <section class="footer-section">
+       <i class="fa-solid fa-gift icono"></i>    
+        <h2>Envio gratis desde los $2.500</h2>
+        <p>Solo por estar registrado en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos</p>
+        </section>
+        <section class="footer-section">
+        <i class="fa-solid fa-user-shield icono"></i>
+        <h2>Seguridad de principio a fin</h2>
+        <p >¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estas siempre protegid@.</P>
+        </section>
+        </div>
+        <p class="footer-final">Copyright 1999-2020 MercadoLiebre S.R.L.</p>
+    </footer>
   
     </body>
   </html>

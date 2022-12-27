@@ -15,47 +15,44 @@ header {background-color: #EAC926;
 }
 
 .primeraSeccionHeader{
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
     padding-top: 4%;
     align-items: flex-start;
 }
 
 img.Logo-ml {
-    width: 35%;
+    width: 25%;
     align-self: center;
 }
 
 .barra-busqueda-icono{
     display: initial;
     align-self: center;
-    gap: 2%;
+    gap: 1%;
  
 }
 
 .barra-busqueda{
-    padding: 3px;
-   
-    
-    
-   
+    padding: 1px 1px;
+    height: 1.3em;
+    width: 15em;
+    left:10%;
+    text-indent: -1px;
+    align-self: center;
 }
 
 #icono-lupa{
-    display: inline;
-    padding: 2% 2%;
-    background-color: white;
     color: black;
-    width: 26%;
-    height: 26%;
-    border: 1px solid #777777;
-    border-radius: 2px;
+    justify-content: center;
     align-self: center;
-}
+    align-items: center;
+    font-size: 90%;
+ }
 
 .advertencia-compra-cuotas{
     text-align: center;
     align-self: center;
-    font-weight: 800;
 }
 
 .burger-menu{
@@ -83,9 +80,9 @@ img.Logo-ml {
 
 
 main{
-    text-align: center;
+    display: block;
     width: 100%;
-    align-content: center;
+    margin: 0 auto;
 }
 
 .section-articulos{
@@ -102,11 +99,6 @@ main{
     height: 10%;
     margin: 0.5% auto;
 }
-
-
-/*.section-articulos .line-break{
-    width: 100%;
-}*/
 
 
 .section-articulos h3{
@@ -207,11 +199,6 @@ color: green;
 margin-left: 10px;
 }
 
-/*.Descripciones{
-    font-size: 10px;
-    text-align: left;
-    
-}*/
 
 h3.Titulares{font-size: 24px;
 width: 100%;}
@@ -229,7 +216,11 @@ img.Imagen-articulo{
 }
 
 .pago-con-tarjeta i{
-    color: blue;
+    color: #1259c3;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 14px;
+    transition: color 0.5s;
 }
 
 .pago-con-tarjeta h3{
@@ -281,16 +272,33 @@ img.Imagen-articulo{
 .section-articulos article section h3{
     display: none;
 }
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    color: #666;
+    padding: 30px 0;
+    margin: 20px 0;
 
+}
+footer i{
+    font-size: 2em; 
+      margin-bottom: 10px;
+      color: blue;
+}
+
+.footer-final{
+    text-align: left;
+    padding: 20px;
+}
 
 
 @media (min-width: 481px){ /*TABLET*/
    
-  
-    /*.section-articulos article{
-        box-shadow: 0px 0px 10px rgba(0,0,0,0);
-    }*/
-
     .primeraSeccionHeader{
         display: flex;
         justify-content: space-between;
@@ -307,7 +315,7 @@ img.Imagen-articulo{
     }
     
     .section-articulos .sub-section-articulos{
-        width: 20%;
+        width: 41%;
         height: 10%;
         margin: 0.5% auto;
     }
@@ -357,8 +365,15 @@ img.Imagen-articulo{
         height: 10%;
         margin: 0.5% auto;
     }
+    .footer-all{
+        display: flex;
+ 
+    }
 
-    
+    .footer-all i:hover{
+       color: violet;
+    }
+
 }
 
 
@@ -367,19 +382,15 @@ img.Imagen-articulo{
         display: flex;
     }
     .primeraSeccionHeader{
-        display: flex;
-        justify-content: space-between;
-        padding-top: 4%;
-        align-items: flex-start;
+        align-items: center;
     }
     .section-articulos{
-        background-color: #ebebeb;
-        align-content: center;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 1px;
-        flex-direction: row;
-    
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
     .section-articulos article section h3{
         display: flex;
     } 
@@ -397,14 +408,14 @@ img.Imagen-articulo{
         display: none;
     }
 
-    .footerClase{
+    .footer-all{
         display: flex;
  
     }
 
-    .footerClase i:hover{
+    .footer-all i:hover{
        color: violet;
     }
-   
+
 }
 
