@@ -1,26 +1,31 @@
 const express = require('express');
-const path = require('path');
-
 const app = express();
 
-const publicPath = path.resolve(__dirname, './public');
-app.use(express.static(publicPath) );
+//Rutas
+const rutasHome = require('./routers/home.js');
+const rutasLogin = require('./routers/login.js');
+const rutasRegister = require('./routers/register.js');
 
-const PORT = process.env.PORT || 3000
-app.listen (PORT, () => console.log('Servidor corriendo en el puerto https://localhost:${PORT}'));
+app.set('view engine', 'ejs');
+
+/*const publicPath = path.resolve(__dirname, './public');
+app.use(express.static(publicPath) );*/
 
 
+/*Esto permite que se vea el css del html*/
+const path=require('path');
+const publicPath=path.join(__dirname,'/public');
+app.use(express.static(__dirname + '/public'));
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/home.html'));
+
+const PORT = process.env.PORT || 3002
+
+app.listen(PORT, () => {
+    console.log('Servidor Funcionando en puerto 3002')
 });
 
-app.get('/register.html', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/register.html'));
-});
+app.use('/', rutasHome);
 
-app.get('/login.html', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/login.html'));
-});
+app.use('/login', rutasLogin);
 
-
+app.use('/register', rutasRegister);
